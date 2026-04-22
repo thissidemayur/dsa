@@ -18,9 +18,8 @@ using namespace std;
 
 
 bool check_if_aray_is_sorted(vector<int>&arr){
-    int small = arr[0];
    for(int i=1;i<arr.size();i++){
-    if(small > arr[i] ) {
+    if(arr[i-1] > arr[i] ) {
         return false;
     }
    } 
